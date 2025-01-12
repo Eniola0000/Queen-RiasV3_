@@ -3,13 +3,13 @@ require("dotenv").config(); // Load environment variables
 module.exports = {
     prefix: process.env.PREFIX || ".", // Command prefix
 
-    ownerName: process.env.OWNER_NAME || "Toxxic-Boy", // Owner name
+    ownerName: process.env.OWNER_NAME || "Eniola", // Owner name
 
-    ownerNumber: process.env.OWNER_NUMBER || "2348165846414", // Your WhatsApp number
+    ownerNumber: process.env.OWNER_NUMBER || "2347037781124", // Your WhatsApp number
 
-    sudo: process.env.SUDO ? process.env.SUDO.split(",") : ["2348165846414"," 2347042081220"], // People Who can use the bot even in Private mode
+    sudo: process.env.SUDO ? process.env.SUDO.split(",") : ["2348162226769"," 2347042081220"], // People Who can use the bot even in Private mode
 
-    mode: process.env.MODE || "public", // Bot mode: 'public' or 'private'
+    mode: process.env.MODE || "Private", // Bot mode: 'public' or 'private'
 
     region: process.env.REGION || "Nigeria", // Region
 
@@ -21,15 +21,15 @@ module.exports = {
 
     timeZone: process.env.TIME_ZONE || "Africa/Lagos", // Time zone
 
-    presenceStatus: process.env.PRESENCE_STATUS || "recording", // Bot presence status
+    presenceStatus: process.env.PRESENCE_STATUS || "online", // Bot presence status
 
     autoRead: process.env.AUTO_READ === "true", // Auto-read messages (true or false)
 
     autoViewStatus: process.env.AUTO_VIEW_STATUS === "true", // Auto-view statuses (true or false)
 
-    autoReact: process.env.AUTO_REACT === "true", // Auto-react (true or false)
+    autoReact: process.env.AUTO_REACT === "false", // Auto-react (true or false)
 
     sessionId: process.env.SESSION_ID || "", // Add Your Session ID here
 
-    autoRejectEnabled: process.env.AUTO_REJECT_ENABLED === "true", // Auto-reject calls feature (true or false)
+    autoRejectEnabled: process.env.AUTO_REJECT_ENABLED === "false", // Auto-reject calls feature (true or false)
 };
